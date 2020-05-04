@@ -54,9 +54,9 @@
 						<p>Mot de passe: <br/> <input required  minlength="8" type="password" name="password"/> </p>
 		
 						<label>Charger une photo: </label><br />
-						<input type="file" name="avatar"/><br /><br />
+						<input type="file" name="pic"/><br /><br />
 	
-							
+						<input type="reset" value="rafraîchir" class="button" />	
 						<input type="submit" name="valider" value="valider"/>
 						<div class = "erreur-connexion">
 							<?php

@@ -16,7 +16,7 @@ session_start();
 		if($tab[5]== $login and  $tab[6] == $hash)
 		{
 			$doesUserExist = TRUE;
-			break; //Sortir de la boucle
+			//Sortir de la boucle
 		}
 	}
 	for($i=0;$i<sizeof($lines);$i++){		
@@ -25,14 +25,14 @@ session_start();
 		if( $doesUserExist = TRUE )
 		{      
 			if ($tab[5]==$login AND $tab[6]==md5($password)){
-				header('Location: compte.php?erreur=connexionErreur');
+				
 				$_SESSION["nom"]= $tab[0];
 				$_SESSION["prenom"]= $tab[1];
 				$_SESSION["mail"]= $tab[2];
 				$_SESSION["filiere"]= $tab[3];
 				$_SESSION["groupe"]= $tab[4];
 				$_SESSION["etu"]= $tab[5];
-				
+				header('Location: compte.php');
 				exit();
 			}
 		}

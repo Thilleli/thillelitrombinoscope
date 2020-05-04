@@ -45,17 +45,6 @@ session_start();
 		
 	</div>
 	
-		$PDFManager = new PDFManager($db);
-		$file = $PDFManager->getByReferant($post->postid());
- 
-			<form class="article-download" action="generpdf.php" method="post">
-               
-                    <input type="hidden" name="fileid" value="<?php echo $file->fileid();?>">
-                    <button type="submit" class="btn btn-success">
-                        <i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> Télécharger
-                    </button>
-            </form>
-	
 	
 </body>
 <footer>

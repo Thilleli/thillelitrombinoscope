@@ -42,7 +42,8 @@
 						</div>
 						<p>Numéro d'étudiant:  <br/> <input required  minlength="5" type="text" name="login"/> </p>
 						<p>Mot de passe: <br/> <input required  minlength="8" type="password" name="password"/> </p>
-							
+						
+						<input type="reset" value="rafraîchir" class="button" />						
 						<input type="submit" name="valider" value="valider"/>
 								   
 					</form>

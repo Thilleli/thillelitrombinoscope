@@ -7,6 +7,7 @@
 	$groupe=$_POST["groupe"];
 	$login = $_POST["login"];
 	$password = $_POST["password"];
+	$file=$_POST["pic"];
 	
 	
 
@@ -30,7 +31,9 @@
 		exit();  
 	}
 
-	else {
+	
+	else
+	{
 		$fichier= fopen($fichier,"a") or die("Unable to open file!");
 		fwrite($fichier, "\n");
 		$hash=md5($password);
@@ -38,7 +41,9 @@
 		fclose($fichier);
 		header('Location: index.php'); 
 		exit();
+	
 	}
+
 ?>
 
 
