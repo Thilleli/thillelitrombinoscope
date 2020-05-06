@@ -43,7 +43,8 @@
                             </select>
                         <p>Groupe: <br/></p>
                             <select name="groupe">
-                                <option name ='groupe' value='A1'>A1</option>
+                                <option name ='groupe' value='L1-MIPI-A1</'>L1-MIPI-A1</option>
+								<option name ='groupe' value='L1-MIPI-A2'>L1-MIPI-A2</option>
                                 <option name ='groupe' value='B2'>B2</option>
                                 <option name ='groupe' value='LPI-1'>LPI-1</option>
                                 <option name ='groupe' value='LPI-2'>LPI-2</option>

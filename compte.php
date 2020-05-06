@@ -22,7 +22,7 @@ session_start();
 	</header>
 	<nav>
 		<ul>
-			<li><a href="../index.php">Accueil</a></li>
+			
 			<li><a href="../modifs.php">Editer mon profil</a></li>
 			<li><a href="../deco.php">Déconnexion</a></li>
 		</ul>
@@ -44,7 +44,12 @@ session_start();
 		Numéro d'étudiant: <?php echo $_SESSION["etu"];?>
 		
 	</div>
-	
+	<?php
+		if (isset($_GET['confirm'])) 
+		{
+			echo "<p>Données modifiées</p>";
+		}
+	?>
 	
 </body>
 <footer>
